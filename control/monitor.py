@@ -49,7 +49,7 @@ def analyze_data():
             alert = True
 
         # Nuevo evento de alerta para la variable Temperatura
-        if item["measurement__name"] == "Temperatura" and item["check_value"] > 19:
+        if variable == "temperatura" and item["check_value"] > 19:
             alert = True
 
         if alert:
